@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+.card-img-top {
+    border-radius: 5%;
+}
+
+.card-text {
+    background-color: rgb(192, 214, 234);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.loading {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-drink-btn {
+    background-color: antiquewhite;
+    padding: 2%;
+    border-radius: 10px; 
+    box-shadow: 5px 5px;
+
+}
