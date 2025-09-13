@@ -1,4 +1,5 @@
 const SERVER_ADDRESS1 = "https://www.thecocktaildb.com/api/json/v1/1/random.php?units=metric"
+const GOOGLE_SEARCH = "https://www.google.com/search?q="
 
 
 const randomSection = document.querySelector(".random-drink")
@@ -11,6 +12,7 @@ const drinkType = document.querySelector(".drink-type")
 const loadingDiv = document.querySelector(".loading-div")
 const errorDiv = document.querySelector(".error-div")
 const newDrinkBtn = document.querySelector(".new-drink-btn")
+const cardLink = document.querySelector(".card-link")
 
 
 function loading () {
@@ -60,6 +62,7 @@ fetch(SERVER_ADDRESS1)
                     
                     newItem.innerHTML =  `<div class="row"> <div class="col">${ingredient}</div> <div class="col text-end">${dosaggio}</div></div>`
                     listGroup.appendChild(newItem)
+                    cardLink.setAttribute("href", GOOGLE_SEARCH + drink.strDrink)
                     stopLoading()
 
                    

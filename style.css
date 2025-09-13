@@ -32,3 +32,10 @@ body {
     box-shadow: 5px 5px;
 
 }
+
+
+.danger-icon {
+    width: 7%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
