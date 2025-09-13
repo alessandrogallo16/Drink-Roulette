@@ -8,6 +8,10 @@ body {
     background-color: darkslategray;
 }
 
+.card {
+    max-width: 600px;
+}
+
 .card-img-top {
     border-radius: 5%;
 }
@@ -38,4 +42,6 @@ body {
     width: 7%;
     margin-left: 50%;
     transform: translate(-50%);
+    height: auto;
+    appearance: none;
 }
