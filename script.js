@@ -61,9 +61,9 @@ fetch(SERVER_ADDRESS1)
                 }
                 newItem.innerHTML = `<div class="row"> <div class="col ingredient-class">${ingredient}</div> <div class="col text-end">${dosaggio}</div></div>`
                 listGroup.appendChild(newItem)
-                cardLink.setAttribute("href", GOOGLE_SEARCH + drink.strDrink)
+                cardLink.setAttribute("href", GOOGLE_SEARCH + drink.strDrink + " cocktail")
 
-                let ingredientUrl = GOOGLE_SEARCH + ingredient
+                let ingredientUrl = GOOGLE_SEARCH + ingredient 
                 let ingredientDiv = newItem.querySelector('.ingredient-class')
                 ingredientDiv.style.cursor = 'pointer'
                 ingredientDiv.addEventListener('click', () => {
