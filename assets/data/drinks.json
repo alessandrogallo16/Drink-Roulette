@@ -1,0 +1,627 @@
+{
+  "ingredienti": [
+    { "id": 1,  "nome": "Gin" },
+    { "id": 2,  "nome": "Vermouth rosso" },
+    { "id": 3,  "nome": "Campari" },
+    { "id": 4,  "nome": "Arancia" },
+    { "id": 5,  "nome": "Prosecco" },
+    { "id": 6,  "nome": "Aperol" },
+    { "id": 7,  "nome": "Soda" },
+    { "id": 8,  "nome": "Purea di pesca bianca" },
+    { "id": 9,  "nome": "Zucchero" },
+    { "id": 10, "nome": "Lampone" },
+    { "id": 11, "nome": "Sciroppo di sambuco" },
+    { "id": 12, "nome": "Menta" },
+    { "id": 13, "nome": "Lime" },
+    { "id": 14, "nome": "Bitter Campari" },
+    { "id": 15, "nome": "Succo di arancia" },
+    { "id": 16, "nome": "Vino rosato" },
+    { "id": 17, "nome": "Fragole" },
+    { "id": 18, "nome": "Succo di limone" },
+    { "id": 19, "nome": "Spumante brut" },
+    { "id": 20, "nome": "Vodka" },
+    { "id": 21, "nome": "Rum bianco" },
+    { "id": 22, "nome": "Rum scuro" },
+    { "id": 23, "nome": "Tequila" },
+    { "id": 24, "nome": "Triple sec" },
+    { "id": 25, "nome": "Cachaça" },
+    { "id": 26, "nome": "Cointreau" },
+    { "id": 27, "nome": "Succo di cranberry" },
+    { "id": 28, "nome": "Succo di pompelmo" },
+    { "id": 29, "nome": "Bourbon" },
+    { "id": 30, "nome": "Angostura bitters" },
+    { "id": 31, "nome": "Acqua" },
+    { "id": 32, "nome": "Cognac" },
+    { "id": 33, "nome": "Olive" },
+    { "id": 34, "nome": "Tonic" },
+    { "id": 35, "nome": "Cola" },
+    { "id": 36, "nome": "Liquore al caffè" },
+    { "id": 37, "nome": "Caffè espresso" },
+    { "id": 38, "nome": "Champagne" },
+    { "id": 39, "nome": "Benedictine" },
+    { "id": 40, "nome": "Falernum" },
+    { "id": 41, "nome": "Orzata" },
+    { "id": 42, "nome": "Crema di cocco" },
+    { "id": 43, "nome": "Noce moscata" },
+    { "id": 44, "nome": "Crema di cassis" },
+    { "id": 45, "nome": "Birra" },
+    { "id": 46, "nome": "Albume d'uovo" },
+    { "id": 47, "nome": "Grenadina" },
+    { "id": 48, "nome": "Succo di ananas" },
+    { "id": 49, "nome": "Soda al pompelmo" },
+    { "id": 50, "nome": "Sciroppo di zucchero" }
+  ],
+  "cocktails": [
+    {
+      "id": "negroni",
+      "nome": "Negroni",
+      "immagine": { "url": "/assets/img/negroni.jpg", "alt": "Negroni in tumbler" },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "30 ml" },
+        { "ingredienteId": 2, "quantita": "30 ml" },
+        { "ingredienteId": 3, "quantita": "30 ml" }
+      ],
+      "istruzioni": "Riempire un tumbler basso con ghiaccio, versare gli ingredienti e mescolare delicatamente.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "spritz",
+      "nome": "Spritz",
+      "immagine": { "url": "/assets/img/spritz.jpg", "alt": "Spritz in calice" },
+      "ingredienti": [
+        { "ingredienteId": 5, "quantita": "3 parti" },
+        { "ingredienteId": 6, "quantita": "2 parti" },
+        { "ingredienteId": 7, "quantita": "1 parte" }
+      ],
+      "istruzioni": "Riempire un calice da vino con ghiaccio, versare prosecco, Aperol e soda. Mescolare dal basso verso l’alto.",
+      "bicchiere": "Calice da vino"
+    },
+    {
+      "id": "bellini",
+      "nome": "Bellini",
+      "immagine": { "url": "/assets/img/bellini.jpg", "alt": "Bellini in flute" },
+      "ingredienti": [
+        { "ingredienteId": 8,  "quantita": "6 cl" },
+        { "ingredienteId": 5,  "quantita": "9 cl" }
+      ],
+      "istruzioni": "Versare la purea di pesca nella flute, aggiungere delicatamente il prosecco e mescolare.",
+      "bicchiere": "Flute"
+    },
+    {
+      "id": "americano",
+      "nome": "Americano",
+      "immagine": { "url": "/assets/img/americano.jpg", "alt": "Americano in old fashioned" },
+      "ingredienti": [
+        { "ingredienteId": 2, "quantita": "30 ml" },
+        { "ingredienteId": 3, "quantita": "30 ml" },
+        { "ingredienteId": 7, "quantita": "q.b." }
+      ],
+      "istruzioni": "Versare vermouth e Campari in un old fashioned con ghiaccio, allungare con soda e mescolare.",
+      "bicchiere": "Old fashioned"
+    },
+    {
+      "id": "hugo",
+      "nome": "Hugo",
+      "immagine": { "url": "/assets/img/hugo.jpg", "alt": "Hugo in calice con menta" },
+      "ingredienti": [
+        { "ingredienteId": 5,  "quantita": "150 ml" },
+        { "ingredienteId": 11, "quantita": "20 ml" },
+        { "ingredienteId": 7,  "quantita": "q.b." },
+        { "ingredienteId": 12, "quantita": "Foglie q.b." }
+      ],
+      "istruzioni": "Versare sciroppo di sambuco, prosecco e soda in un calice con ghiaccio. Guarnire con menta.",
+      "bicchiere": "Calice da vino"
+    },
+    {
+      "id": "garibaldi",
+      "nome": "Garibaldi",
+      "immagine": { "url": "/assets/img/garibaldi.jpg", "alt": "Garibaldi in tumblers alto" },
+      "ingredienti": [
+        { "ingredienteId": 14, "quantita": "50 ml" },
+        { "ingredienteId": 15, "quantita": "150 ml" }
+      ],
+      "istruzioni": "Versare Campari e succo d’arancia in tumbler alto con ghiaccio e mescolare.",
+      "bicchiere": "Tumbler alto"
+    },
+    {
+      "id": "milano-torino",
+      "nome": "Milano Torino",
+      "immagine": { "url": "/assets/img/milano-torino.jpg", "alt": "Milano Torino in tumbler" },
+      "ingredienti": [
+        { "ingredienteId": 2, "quantita": "35 ml" },
+        { "ingredienteId": 14, "quantita": "35 ml" }
+      ],
+      "istruzioni": "Mescolare Vermouth e Campari in un tumbler con ghiaccio e guarnire con fetta d’arancia.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "frose",
+      "nome": "Frosé",
+      "immagine": { "url": "/assets/img/frose.jpg", "alt": "Frosé in calice" },
+      "ingredienti": [
+        { "ingredienteId": 16, "quantita": "500 ml" },
+        { "ingredienteId": 17, "quantita": "100 g" },
+        { "ingredienteId": 18, "quantita": "q.b." },
+        { "ingredienteId": 9,  "quantita": "q.b." }
+      ],
+      "istruzioni": "Frullare fragole, succo di limone e zucchero, unire vino rosato e congelare fino a granita.",
+      "bicchiere": "Calice da vino"
+    },
+    {
+      "id": "mimosa",
+      "nome": "Mimosa",
+      "immagine": { "url": "/assets/img/mimosa.jpg", "alt": "Mimosa in flute" },
+      "ingredienti": [
+        { "ingredienteId": 19, "quantita": "6 cl" },
+        { "ingredienteId": 15, "quantita": "6 cl" }
+      ],
+      "istruzioni": "Versare spumante e succo d’arancia in flute fredda e servire.",
+      "bicchiere": "Flute"
+    },
+    {
+      "id": "rossini",
+      "nome": "Rossini",
+      "immagine": { "url": "/assets/img/rossini.jpg", "alt": "Rossini in flute" },
+      "ingredienti": [
+        { "ingredienteId": 10, "quantita": "4 cl" },
+        { "ingredienteId": 5,  "quantita": "8 cl" }
+      ],
+      "istruzioni": "Versare purea di lampone in flute e aggiungere prosecco. Mescolare delicatamente.",
+      "bicchiere": "Flute"
+    },
+    {
+      "id": "negroni-sbagliato",
+      "nome": "Negroni sbagliato",
+      "immagine": { "url": "/assets/img/negroni-sbagliato.jpg", "alt": "Negroni sbagliato" },
+      "ingredienti": [
+        { "ingredienteId": 2, "quantita": "30 ml" },
+        { "ingredienteId": 3, "quantita": "30 ml" },
+        { "ingredienteId": 5, "quantita": "30 ml" }
+      ],
+      "istruzioni": "Sostituire il gin con prosecco: mescolare gli ingredienti su ghiaccio e servire.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "sgroppino",
+      "nome": "Sgroppino",
+      "immagine": { "url": "/assets/img/sgroppino.jpg", "alt": "Sgroppino in coppa" },
+      "ingredienti": [
+        { "ingredienteId": 46, "quantita": "1 pallina" },
+        { "ingredienteId": 20, "quantita": "30 ml" },
+        { "ingredienteId": 5,  "quantita": "100 ml" }
+      ],
+      "istruzioni": "Mescolare sorbetto, vodka e prosecco in coppa fredda e servire subito.",
+      "bicchiere": "Coppa da dessert"
+    },
+    {
+      "id": "margarita",
+      "nome": "Margarita",
+      "immagine": { "url": "/assets/img/margarita.jpg", "alt": "Margarita in coppa" },
+      "ingredienti": [
+        { "ingredienteId": 23, "quantita": "50 ml" },
+        { "ingredienteId": 24, "quantita": "25 ml" },
+        { "ingredienteId": 13, "quantita": "25 ml" }
+      ],
+      "istruzioni": "Shakerare tequila, triple sec e succo di lime con ghiaccio. Filtrare in coppa ghiacciata.",
+      "bicchiere": "Coppa Margarita"
+    },
+    {
+      "id": "mojito",
+      "nome": "Mojito",
+      "immagine": { "url": "/assets/img/mojito.jpg", "alt": "Mojito in highball" },
+      "ingredienti": [
+        { "ingredienteId": 21, "quantita": "50 ml" },
+        { "ingredienteId": 13, "quantita": "Mezzo lime" },
+        { "ingredienteId": 9,  "quantita": "2 cucchiaini" },
+        { "ingredienteId": 12, "quantita": "Foglie q.b." },
+        { "ingredienteId": 7,  "quantita": "q.b." }
+      ],
+      "istruzioni": "Pestare lime, zucchero e menta. Aggiungere rum, ghiaccio e soda. Mescolare.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "caipirinha",
+      "nome": "Caipirinha",
+      "immagine": { "url": "/assets/img/caipirinha.jpg", "alt": "Caipirinha in tumbler" },
+      "ingredienti": [
+        { "ingredienteId": 25, "quantita": "50 ml" },
+        { "ingredienteId": 13, "quantita": "Mezzo lime" },
+        { "ingredienteId": 9,  "quantita": "2 cucchiaini" }
+      ],
+      "istruzioni": "Pestare lime e zucchero. Aggiungere ghiaccio e cachaça. Mescolare e servire.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "daiquiri",
+      "nome": "Daiquiri",
+      "immagine": { "url": "/assets/img/daiquiri.jpg", "alt": "Daiquiri in coppa" },
+      "ingredienti": [
+        { "ingredienteId": 21, "quantita": "50 ml" },
+        { "ingredienteId": 18, "quantita": "25 ml" },
+        { "ingredienteId": 50, "quantita": "15 ml" }
+      ],
+      "istruzioni": "Shakerare rum, succo di limone e sciroppo di zucchero con ghiaccio. Filtrare in coppa.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "pina-colada",
+      "nome": "Piña Colada",
+      "immagine": { "url": "/assets/img/pina-colada.jpg", "alt": "Piña Colada in highball" },
+      "ingredienti": [
+        { "ingredienteId": 21, "quantita": "60 ml" },
+        { "ingredienteId": 48, "quantita": "90 ml" },
+        { "ingredienteId": 42, "quantita": "30 ml" }
+      ],
+      "istruzioni": "Frullare rum, succo d’ananas e crema di cocco con ghiaccio fino a consistenza liscia.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "sex-on-the-beach",
+      "nome": "Sex on the Beach",
+      "immagine": { "url": "/assets/img/sex-on-the-beach.jpg", "alt": "Sex on the Beach" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "40 ml" },
+        { "ingredienteId": 24, "quantita": "20 ml" },
+        { "ingredienteId": 15, "quantita": "40 ml" },
+        { "ingredienteId": 27, "quantita": "40 ml" }
+      ],
+      "istruzioni": "Versare tutti gli ingredienti in tumbler alto con ghiaccio e mescolare.",
+      "bicchiere": "Tumbler alto"
+    },
+    {
+      "id": "cosmopolitan",
+      "nome": "Cosmopolitan",
+      "immagine": { "url": "/assets/img/cosmopolitan.jpg", "alt": "Cosmopolitan in coppa" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "40 ml" },
+        { "ingredienteId": 26, "quantita": "15 ml" },
+        { "ingredienteId": 13, "quantita": "15 ml" },
+        { "ingredienteId": 27, "quantita": "30 ml" }
+      ],
+      "istruzioni": "Shakerare con ghiaccio e filtrare in coppa fredda.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "bloody-mary",
+      "nome": "Bloody Mary",
+      "immagine": { "url": "/assets/img/bloody-mary.jpg", "alt": "Bloody Mary in tumbler alto" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "45 ml" },
+        { "ingredienteId": 15, "quantita": "90 ml" },
+        { "ingredienteId": 18, "quantita": "15 ml" },
+        { "ingredienteId": 30, "quantita": "2 dash" }
+      ],
+      "istruzioni": "Versare vodka, succo d’arancia, succo di limone e bitters in tumbler con ghiaccio. Mescolare.",
+      "bicchiere": "Tumbler alto"
+    },
+    {
+      "id": "long-island-iced-tea",
+      "nome": "Long Island Iced Tea",
+      "immagine": { "url": "/assets/img/long-island-iced-tea.jpg", "alt": "Long Island Iced Tea" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "15 ml" },
+        { "ingredienteId": 1,  "quantita": "15 ml" },
+        { "ingredienteId": 21, "quantita": "15 ml" },
+        { "ingredienteId": 23, "quantita": "15 ml" },
+        { "ingredienteId": 24, "quantita": "15 ml" },
+        { "ingredienteId": 18, "quantita": "25 ml" },
+        { "ingredienteId": 35, "quantita": "q.b." }
+      ],
+      "istruzioni": "Versare i distillati e il succo di limone in highball con ghiaccio, completare con cola.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "old-fashioned",
+      "nome": "Old Fashioned",
+      "immagine": { "url": "/assets/img/old-fashioned.jpg", "alt": "Old Fashioned" },
+      "ingredienti": [
+        { "ingredienteId": 29, "quantita": "45 ml" },
+        { "ingredienteId": 9,  "quantita": "1 zolletta" },
+        { "ingredienteId": 30, "quantita": "2 dash" }
+      ],
+      "istruzioni": "Pestare zucchero e bitters, aggiungere bourbon e ghiaccio. Mescolare.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "manhattan",
+      "nome": "Manhattan",
+      "immagine": { "url": "/assets/img/manhattan.jpg", "alt": "Manhattan in coppa" },
+      "ingredienti": [
+        { "ingredienteId": 29, "quantita": "50 ml" },
+        { "ingredienteId": 2,  "quantita": "20 ml" },
+        { "ingredienteId": 30, "quantita": "2 dash" }
+      ],
+      "istruzioni": "Mescolare con ghiaccio, filtrare in coppa fredda e decorare con ciliegina.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "whiskey-sour",
+      "nome": "Whiskey Sour",
+      "immagine": { "url": "/assets/img/whiskey-sour.jpg", "alt": "Whiskey Sour" },
+      "ingredienti": [
+        { "ingredienteId": 29, "quantita": "45 ml" },
+        { "ingredienteId": 18, "quantita": "30 ml" },
+        { "ingredienteId": 9,  "quantita": "15 ml" },
+        { "ingredienteId": 46, "quantita": "1 albume" }
+      ],
+      "istruzioni": "Shakerare ingredienti senza ghiaccio, poi con ghiaccio e filtrare.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "sidecar",
+      "nome": "Sidecar",
+      "immagine": { "url": "/assets/img/sidecar.jpg", "alt": "Sidecar in coppa" },
+      "ingredienti": [
+        { "ingredienteId": 32, "quantita": "50 ml" },
+        { "ingredienteId": 26, "quantita": "20 ml" },
+        { "ingredienteId": 18, "quantita": "20 ml" }
+      ],
+      "istruzioni": "Shakerare con ghiaccio e filtrare in coppa. Guarnire con scorza di limone.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "gin-tonic",
+      "nome": "Gin Tonic",
+      "immagine": { "url": "/assets/img/gin-tonic.jpg", "alt": "Gin Tonic in highball" },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "50 ml" },
+        { "ingredienteId": 34, "quantita": "q.b." }
+      ],
+      "istruzioni": "Versare gin e tonic in highball con ghiaccio. Guarnire con fetta di lime.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "espresso-martini",
+      "nome": "Espresso Martini",
+      "immagine": { "url": "/assets/img/espresso-martini.jpg", "alt": "Espresso Martini in coppa" },
+      "ingredienti": [
+        { "ingredienteId": 37, "quantita": "30 ml" },
+        { "ingredienteId": 36, "quantita": "30 ml" },
+        { "ingredienteId": 20, "quantita": "30 ml" }
+      ],
+      "istruzioni": "Shakerare con ghiaccio e filtrare in coppa fredda.",
+      "bicchiere": "Coppa Martini"
+    },
+    {
+      "id": "dry-martini",
+      "nome": "Dry Martini",
+      "immagine": { "url": "/assets/img/dry-martini.jpg", "alt": "Dry Martini in coppa" },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "60 ml" },
+        { "ingredienteId": 2, "quantita": "10 ml" }
+      ],
+      "istruzioni": "Mescolare o stir con ghiaccio e filtrare in coppa fredda. Guarnire con oliva.",
+      "bicchiere": "Coppa Martini"
+    },
+    {
+      "id": "french-75",
+      "nome": "French 75",
+      "immagine": { "url": "/assets/img/french-75.jpg", "alt": "French 75 in flute" },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "30 ml" },
+        { "ingredienteId": 18, "quantita": "15 ml" },
+        { "ingredienteId": 38, "quantita": "q.b." }
+      ],
+      "istruzioni": "Shakerare gin e limone con ghiaccio, versare in flute e completare con champagne.",
+      "bicchiere": "Flute"
+    },
+    {
+      "id": "moscow-mule",
+      "nome": "Moscow Mule",
+      "immagine": { "url": "/assets/img/moscow-mule.jpg", "alt": "Moscow Mule in mug" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "50 ml" },
+        { "ingredienteId": 28, "quantita": "100 ml" },
+        { "ingredienteId": 13, "quantita": "10 ml" }
+      ],
+      "istruzioni": "Versare vodka e ginger beer in tazza di rame con ghiaccio. Guarnire con lime.",
+      "bicchiere": "Mug in rame"
+    },
+    {
+      "id": "tequila-sunrise",
+      "nome": "Tequila Sunrise",
+      "immagine": { "url": "/assets/img/tequila-sunrise.jpg", "alt": "Tequila Sunrise" },
+      "ingredienti": [
+        { "ingredienteId": 23, "quantita": "45 ml" },
+        { "ingredienteId": 15, "quantita": "90 ml" },
+        { "ingredienteId": 47, "quantita": "15 ml" }
+      ],
+      "istruzioni": "Versare tequila e succo d’arancia in highball. Aggiungere grenadina lentamente.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "tom-collins",
+      "nome": "Tom Collins",
+      "immagine": { "url": "/assets/img/tom-collins.jpg", "alt": "Tom Collins" },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "50 ml" },
+        { "ingredienteId": 18, "quantita": "25 ml" },
+        { "ingredienteId": 7, "quantita": "q.b." }
+      ],
+      "istruzioni": "Shakerare gin e limone, versare in highball con ghiaccio e completare con soda.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "caipiroska",
+      "nome": "Caipiroska",
+      "immagine": { "url": "/assets/img/caipiroska.jpg", "alt": "Caipiroska" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "50 ml" },
+        { "ingredienteId": 13, "quantita": "Mezzo lime" },
+        { "ingredienteId": 9,  "quantita": "2 cucchiaini" }
+      ],
+      "istruzioni": "Pestare lime e zucchero. Aggiungere vodka e ghiaccio. Mescolare.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "boulevardier",
+      "nome": "Boulevardier",
+      "immagine": { "url": "/assets/img/boulevardier.jpg", "alt": "Boulevardier" },
+      "ingredienti": [
+        { "ingredienteId": 29, "quantita": "30 ml" },
+        { "ingredienteId": 2,  "quantita": "30 ml" },
+        { "ingredienteId": 3,  "quantita": "30 ml" }
+      ],
+      "istruzioni": "Mescolare gli ingredienti con ghiaccio e filtrare in coppa o tumbler basso.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "clover-club",
+      "nome": "Clover Club",
+      "immagine": { "url": "/assets/img/clover-club.jpg", "alt": "Clover Club" },
+      "ingredienti": [
+        { "ingredienteId": 1,  "quantita": "45 ml" },
+        { "ingredienteId": 9,  "quantita": "15 ml" },
+        { "ingredienteId": 44, "quantita": "15 ml" },
+        { "ingredienteId": 46, "quantita": "1 albume" }
+      ],
+      "istruzioni": "Shakerare tutti gli ingredienti a secco, poi con ghiaccio e filtrare in coppa.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "singapore-sling",
+      "nome": "Singapore Sling",
+      "immagine": { "url": "/assets/img/singapore-sling.jpg", "alt": "Singapore Sling" },
+      "ingredienti": [
+        { "ingredienteId": 1,  "quantita": "30 ml" },
+        { "ingredienteId": 26, "quantita": "15 ml" },
+        { "ingredienteId": 27, "quantita": "30 ml" },
+        { "ingredienteId": 7,  "quantita": "q.b." }
+      ],
+      "istruzioni": "Shakerare gin, Cointreau e succo di cranberry. Versare in tumbler con ghiaccio e completare con soda.",
+      "bicchiere": "Tumbler alto"
+    },
+    {
+      "id": "mai-tai",
+      "nome": "Mai Tai",
+      "immagine": { "url": "/assets/img/mai-tai.jpg", "alt": "Mai Tai" },
+      "ingredienti": [
+        { "ingredienteId": 21, "quantita": "30 ml" },
+        { "ingredienteId": 22, "quantita": "30 ml" },
+        { "ingredienteId": 24, "quantita": "15 ml" },
+        { "ingredienteId": 43, "quantita": "Una spolverata" }
+      ],
+      "istruzioni": "Shakerare con ghiaccio e filtrare in bicchiere. Guarnire con lime e menta.",
+      "bicchiere": "Tumbler alto"
+    },
+    {
+      "id": "dark-and-stormy",
+      "nome": "Dark and Stormy",
+      "immagine": { "url": "/assets/img/dark-and-stormy.jpg", "alt": "Dark and Stormy" },
+      "ingredienti": [
+        { "ingredienteId": 22, "quantita": "50 ml" },
+        { "ingredienteId": 28, "quantita": "100 ml" }
+      ],
+      "istruzioni": "Versare rum e ginger beer in highball con ghiaccio. Guarnire con lime.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "paloma",
+      "nome": "Paloma",
+      "immagine": { "url": "/assets/img/paloma.jpg", "alt": "Paloma" },
+      "ingredienti": [
+        { "ingredienteId": 23, "quantita": "50 ml" },
+        { "ingredienteId": 28, "quantita": "100 ml" },
+        { "ingredienteId": 47, "quantita": "5 ml" }
+      ],
+      "istruzioni": "Versare gli ingredienti in highball con ghiaccio e mescolare.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "between-the-sheets",
+      "nome": "Between the Sheets",
+      "immagine": { "url": "/assets/img/between-the-sheets.jpg", "alt": "Between the Sheets" },
+      "ingredienti": [
+        { "ingredienteId": 32, "quantita": "30 ml" },
+        { "ingredienteId": 23, "quantita": "30 ml" },
+        { "ingredienteId": 26, "quantita": "15 ml" },
+        { "ingredienteId": 18, "quantita": "15 ml" }
+      ],
+      "istruzioni": "Shakerare con ghiaccio e filtrare in coppa fredda.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "last-word",
+      "nome": "Last Word",
+      "immagine": { "url": "/assets/img/last-word.jpg", "alt": "Last Word" },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "30 ml" },
+        { "ingredienteId": 44, "quantita": "30 ml" },
+        { "ingredienteId": 24, "quantita": "30 ml" },
+        { "ingredienteId": 18, "quantita": "30 ml" }
+      ],
+      "istruzioni": "Shakerare con ghiaccio e filtrare in coppa.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "white-russian",
+      "nome": "White Russian",
+      "immagine": { "url": "/assets/img/white-russian.jpg", "alt": "White Russian" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "50 ml" },
+        { "ingredienteId": 36, "quantita": "25 ml" },
+        { "ingredienteId": 31, "quantita": "25 ml" }
+      ],
+      "istruzioni": "Versare vodka e liquore al caffè in tumbler con ghiaccio, aggiungere panna o latte.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "black-russian",
+      "nome": "Black Russian",
+      "immagine": { "url": "/assets/img/black-russian.jpg", "alt": "Black Russian" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "50 ml" },
+        { "ingredienteId": 36, "quantita": "25 ml" }
+      ],
+      "istruzioni": "Versare vodka e liquore al caffè in tumbler con ghiaccio. Mescolare.",
+      "bicchiere": "Tumbler basso"
+    },
+    {
+      "id": "gimlet",
+      "nome": "Gimlet",
+      "immagine": { "url": "/assets/img/gimlet.jpg", "alt": "Gimlet" },
+      "ingredienti": [
+        { "ingredienteId": 1,  "quantita": "60 ml" },
+        { "ingredienteId": 13, "quantita": "15 ml" }
+      ],
+      "istruzioni": "Shakerare con ghiaccio e filtrare in coppa fredda.",
+      "bicchiere": "Coppa cocktail"
+    },
+    {
+      "id": "kir-royal",
+      "nome": "Kir Royal",
+      "immagine": { "url": "/assets/img/kir-royal.jpg", "alt": "Kir Royal in flute" },
+      "ingredienti": [
+        { "ingredienteId": 44, "quantita": "15 ml" },
+        { "ingredienteId": 38, "quantita": "q.b." }
+      ],
+      "istruzioni": "Versare crème de cassis in flute, completare con champagne e non mescolare.",
+      "bicchiere": "Flute"
+    },
+    {
+      "id": "champagne-cocktail",
+      "nome": "Champagne Cocktail",
+      "immagine": { "url": "/assets/img/champagne-cocktail.jpg", "alt": "Champagne Cocktail" },
+      "ingredienti": [
+        { "ingredienteId": 38, "quantita": "q.b." },
+        { "ingredienteId": 9,  "quantita": "1 zolletta" },
+        { "ingredienteId": 30, "quantita": "2 dash" }
+      ],
+      "istruzioni": "Mettere la zolletta imbevuta di bitters in flute e completare con champagne.",
+      "bicchiere": "Flute"
+    },
+    {
+      "id": "rum-punch",
+      "nome": "Rum Punch",
+      "immagine": { "url": "/assets/img/rum-punch.jpg", "alt": "Rum Punch" },
+      "ingredienti": [
+        { "ingredienteId": 22, "quantita": "50 ml" },
+        { "ingredienteId": 48, "quantita": "100 ml" },
+        { "ingredienteId": 49, "quantita": "20 ml" },
+        { "ingredienteId": 50, "quantita": "10 ml" }
+      ],
+      "istruzioni": "Mescolare tutti gli ingredienti con ghiaccio e servire in coppa o highball.",
+      "bicchiere": "Highball"
+    }
+  ]
+}

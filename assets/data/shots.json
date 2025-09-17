@@ -1,0 +1,329 @@
+{
+  "ingredienti": [
+    { "id": 1,  "nome": "Vodka" },
+    { "id": 2,  "nome": "Succo d’arancia" },
+    { "id": 3,  "nome": "Succo di mirtillo" },
+    { "id": 4,  "nome": "Fragole" },
+    { "id": 5,  "nome": "Alcol per liquori 95°" },
+    { "id": 6,  "nome": "Zucchero" },
+    { "id": 7,  "nome": "Arancia" },
+    { "id": 8,  "nome": "Succo di limone" },
+    { "id": 9,  "nome": "Zenzero" },
+    { "id": 10, "nome": "Curcuma" },
+    { "id": 11, "nome": "Miele" },
+    { "id": 12, "nome": "Acqua" },
+    { "id": 13, "nome": "Spumante brut" },
+    { "id": 14, "nome": "Chicchi di caffè" },
+    { "id": 15, "nome": "Sambuca" },
+    { "id": 16, "nome": "Liquore al caffè" },
+    { "id": 17, "nome": "Baileys" },
+    { "id": 18, "nome": "Triple sec" },
+    { "id": 19, "nome": "Succo di lime" },
+    { "id": 20, "nome": "Tequila" },
+    { "id": 21, "nome": "Sale" },
+    { "id": 22, "nome": "Lime" },
+    { "id": 23, "nome": "Crema di cacao" },
+    { "id": 24, "nome": "Grand Marnier" },
+    { "id": 25, "nome": "Jägermeister" },
+    { "id": 26, "nome": "Red Bull" },
+    { "id": 27, "nome": "Caffè espresso" },
+    { "id": 28, "nome": "Liquore alla ciliegia" },
+    { "id": 29, "nome": "Liquore alla menta" },
+    { "id": 30, "nome": "Tabasco" },
+    { "id": 31, "nome": "Rum bianco" }
+  ],
+  "cocktails": [
+    {
+      "id": "shottino-fruttato-vodka",
+      "nome": "Shottino fruttato alla vodka",
+      "immagine": {
+        "url": "/assets/img/shottino-fruttato-vodka.jpg",
+        "alt": "Shottino fruttato alla vodka"
+      },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "1 parte" },
+        { "ingredienteId": 2, "quantita": "1 parte" },
+        { "ingredienteId": 3, "quantita": "1 goccio" }
+      ],
+      "istruzioni": "Versare in parti uguali vodka e succo d’arancia in un bicchierino, aggiungere un goccio di succo di mirtillo e servire subito.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "shottino-fragole",
+      "nome": "Shottino di fragole",
+      "immagine": {
+        "url": "/assets/img/shottino-fragole.jpg",
+        "alt": "Shottino di fragole"
+      },
+      "ingredienti": [
+        { "ingredienteId": 4, "quantita": "q.b." },
+        { "ingredienteId": 5, "quantita": "q.b." },
+        { "ingredienteId": 6, "quantita": "q.b." }
+      ],
+      "istruzioni": "Scavare una fragola, riempire con alcol 95° e un pizzico di zucchero, dare fuoco e, una volta spenta la fiamma, gustare subito.",
+      "bicchiere": "Fragola svuotata"
+    },
+    {
+      "id": "ginger-shot",
+      "nome": "Ginger shot",
+      "immagine": {
+        "url": "/assets/img/ginger-shot.jpg",
+        "alt": "Ginger shot"
+      },
+      "ingredienti": [
+        { "ingredienteId": 7, "quantita": "2 fette" },
+        { "ingredienteId": 8, "quantita": "1 fetta" },
+        { "ingredienteId": 9, "quantita": "20 g" },
+        { "ingredienteId": 10, "quantita": "1 cucchiaino" },
+        { "ingredienteId": 11, "quantita": "1 cucchiaino" },
+        { "ingredienteId": 12, "quantita": "50 ml" }
+      ],
+      "istruzioni": "Frullare arancia, limone, zenzero, curcuma, miele e acqua, filtrare e servire in un bicchierino freddo.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "mimosa-shot",
+      "nome": "Mimosa shot",
+      "immagine": {
+        "url": "/assets/img/mimosa-shot.jpg",
+        "alt": "Mimosa shot"
+      },
+      "ingredienti": [
+        { "ingredienteId": 13, "quantita": "3 cl" },
+        { "ingredienteId": 2,  "quantita": "3 cl" }
+      ],
+      "istruzioni": "Versare succo d’arancia e spumante nella stessa quantità in un bicchierino freddo e servire subito.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "sambuca-mosca",
+      "nome": "Sambuca con la mosca",
+      "immagine": {
+        "url": "/assets/img/sambuca-mosca.jpg",
+        "alt": "Sambuca con la mosca"
+      },
+      "ingredienti": [
+        { "ingredienteId": 15, "quantita": "40 ml" },
+        { "ingredienteId": 14, "quantita": "2 chicchi" }
+      ],
+      "istruzioni": "Versare la sambuca in un bicchierino e aggiungere due chicchi di caffè. Servire liscio.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "baby-guinness",
+      "nome": "Baby Guinness",
+      "immagine": {
+        "url": "/assets/img/baby-guinness.jpg",
+        "alt": "Baby Guinness"
+      },
+      "ingredienti": [
+        { "ingredienteId": 16, "quantita": "10 ml" },
+        { "ingredienteId": 17, "quantita": "20 ml" }
+      ],
+      "istruzioni": "Versare lentamente il liquore al caffè in un bicchierino e poi il Baileys in modo da formare uno strato superiore.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "kamikaze-shot",
+      "nome": "Kamikaze",
+      "immagine": {
+        "url": "/assets/img/kamikaze-shot.jpg",
+        "alt": "Kamikaze"
+      },
+      "ingredienti": [
+        { "ingredienteId": 1,  "quantita": "20 ml" },
+        { "ingredienteId": 18, "quantita": "10 ml" },
+        { "ingredienteId": 19, "quantita": "10 ml" }
+      ],
+      "istruzioni": "Shakerare vodka, triple sec e succo di lime con ghiaccio, filtrare in bicchierino freddo e servire subito.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "lemon-drop",
+      "nome": "Lemon Drop",
+      "immagine": {
+        "url": "/assets/img/lemon-drop.jpg",
+        "alt": "Lemon Drop"
+      },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "30 ml" },
+        { "ingredienteId": 8, "quantita": "15 ml" },
+        { "ingredienteId": 6, "quantita": "1 cucchiaino" }
+      ],
+      "istruzioni": "Agitare vodka, succo di limone e zucchero con ghiaccio, filtrare in bicchierino e servire.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "tequila-shot",
+      "nome": "Tequila shot",
+      "immagine": {
+        "url": "/assets/img/tequila-shot.jpg",
+        "alt": "Tequila shot"
+      },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "30 ml" },
+        { "ingredienteId": 21, "quantita": "q.b." },
+        { "ingredienteId": 22, "quantita": "Mezza fetta" }
+      ],
+      "istruzioni": "Inumidire il dorso della mano con lime, strofinare sul sale, bere la tequila, poi il sale e infine il lime.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "chocolate-shot",
+      "nome": "Chocolate shot",
+      "immagine": {
+        "url": "/assets/img/chocolate-shot.jpg",
+        "alt": "Chocolate shot"
+      },
+      "ingredienti": [
+        { "ingredienteId": 23, "quantita": "30 ml" },
+        { "ingredienteId": 1,  "quantita": "10 ml" }
+      ],
+      "istruzioni": "Mescolare crema di cacao e vodka in un bicchierino, agitare leggermente e servire freddo.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "flaming-b52",
+      "nome": "Flaming B-52",
+      "immagine": {
+        "url": "/assets/img/flaming-b52.jpg",
+        "alt": "Flaming B-52"
+      },
+      "ingredienti": [
+        { "ingredienteId": 16, "quantita": "20 ml" },
+        { "ingredienteId": 17, "quantita": "20 ml" },
+        { "ingredienteId": 24, "quantita": "10 ml" }
+      ],
+      "istruzioni": "Versare gli strati di liquore al caffè, Baileys e Grand Marnier, dare fuoco delicatamente e spegnere prima di bere.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "jager-shot",
+      "nome": "Jägermeister Shot",
+      "immagine": {
+        "url": "/assets/img/jager-shot.jpg",
+        "alt": "Jägermeister Shot"
+      },
+      "ingredienti": [
+        { "ingredienteId": 25, "quantita": "40 ml" }
+      ],
+      "istruzioni": "Versare Jägermeister ghiacciato in un bicchierino e bere in un sorso solo.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "slippery-nipple",
+      "nome": "Slippery Nipple",
+      "immagine": {
+        "url": "/assets/img/slippery-nipple.jpg",
+        "alt": "Slippery Nipple"
+      },
+      "ingredienti": [
+        { "ingredienteId": 15, "quantita": "20 ml" },
+        { "ingredienteId": 17, "quantita": "20 ml" }
+      ],
+      "istruzioni": "Versare Sambuca e Baileys in ordine, senza mescolare, in un bicchierino e servire.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "red-bull-bomb",
+      "nome": "Red Bull Bomb",
+      "immagine": {
+        "url": "/assets/img/red-bull-bomb.jpg",
+        "alt": "Red Bull Bomb"
+      },
+      "ingredienti": [
+        { "ingredienteId": 1,  "quantita": "30 ml" },
+        { "ingredienteId": 26, "quantita": "60 ml" }
+      ],
+      "istruzioni": "Riempire un bicchierino con vodka, colmare con Red Bull e bere rapidamente.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "espresso-shot",
+      "nome": "Espresso Shot",
+      "immagine": {
+        "url": "/assets/img/espresso-shot.jpg",
+        "alt": "Espresso Shot"
+      },
+      "ingredienti": [
+        { "ingredienteId": 27, "quantita": "30 ml" },
+        { "ingredienteId": 16, "quantita": "10 ml" }
+      ],
+      "istruzioni": "Eseguire un espresso ristretto, aggiungere il liquore al caffè e servire caldo in bicchierino.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "cherry-bomb",
+      "nome": "Cherry Bomb",
+      "immagine": {
+        "url": "/assets/img/cherry-bomb.jpg",
+        "alt": "Cherry Bomb"
+      },
+      "ingredienti": [
+        { "ingredienteId": 1,  "quantita": "30 ml" },
+        { "ingredienteId": 28, "quantita": "15 ml" },
+        { "ingredienteId": 26, "quantita": "30 ml" }
+      ],
+      "istruzioni": "Versare vodka, liquore alla ciliegia e Red Bull in un bicchierino, mescolare leggermente e servire.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "carajillo",
+      "nome": "Carajillo",
+      "immagine": {
+        "url": "/assets/img/carajillo.jpg",
+        "alt": "Carajillo"
+      },
+      "ingredienti": [
+        { "ingredienteId": 27, "quantita": "30 ml" },
+        { "ingredienteId": 16, "quantita": "30 ml" }
+      ],
+      "istruzioni": "Unire un espresso ristretto a pari dose di liquore al caffè in un bicchierino e servire caldo.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "peppermint-patty",
+      "nome": "Peppermint Patty",
+      "immagine": {
+        "url": "/assets/img/peppermint-patty.jpg",
+        "alt": "Peppermint Patty"
+      },
+      "ingredienti": [
+        { "ingredienteId": 1,  "quantita": "20 ml" },
+        { "ingredienteId": 29, "quantita": "20 ml" }
+      ],
+      "istruzioni": "Versare vodka e liquore alla menta in un bicchierino freddo, agitare leggermente e servire.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "spicy-tequila",
+      "nome": "Spicy Tequila",
+      "immagine": {
+        "url": "/assets/img/spicy-tequila.jpg",
+        "alt": "Spicy Tequila"
+      },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "30 ml" },
+        { "ingredienteId": 30, "quantita": "2 dash" },
+        { "ingredienteId": 19, "quantita": "10 ml" }
+      ],
+      "istruzioni": "Shakerare tequila, Tabasco e succo di lime con ghiaccio, filtrare in bicchierino e servire piccante.",
+      "bicchiere": "Bicchierino"
+    },
+    {
+      "id": "rum-pumpkin",
+      "nome": "Rum Pumpkin",
+      "immagine": {
+        "url": "/assets/img/rum-pumpkin.jpg",
+        "alt": "Rum Pumpkin"
+      },
+      "ingredienti": [
+        { "ingredienteId": 31, "quantita": "30 ml" },
+        { "ingredienteId": 24, "quantita": "15 ml" },
+        { "ingredienteId": 6,  "quantita": "1 cucchiaino" }
+      ],
+      "istruzioni": "Mescolare rum bianco, Grand Marnier e zucchero in un bicchierino, agitare e servire freddo.",
+      "bicchiere": "Bicchierino"
+    }
+  ]
+}
