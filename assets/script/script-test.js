@@ -108,7 +108,7 @@ fetch(DATABASE_ADDRESS)
         const newDrink = getRandomItem(data.cocktails)
         console.log(newDrink)
 
-        cardImg.setAttribute("src", "." + newDrink.immagine.url)
+        cardImg.setAttribute("src", ".." + newDrink.immagine.url)
         cardImg.setAttribute("alt", newDrink.immagine.alt)
 
         cardTitle.innerText = newDrink.nome
