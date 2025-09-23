@@ -49,7 +49,10 @@
     { "id": 47, "nome": "Grenadina" },
     { "id": 48, "nome": "Succo di ananas" },
     { "id": 49, "nome": "Soda al pompelmo" },
-    { "id": 50, "nome": "Sciroppo di zucchero" }
+    { "id": 50, "nome": "Sciroppo di zucchero" },
+    { "id": 51, "nome": "Blue Curaçao" },
+    { "id": 52, "nome": "Succo di pomodoro" },
+    { "id": 53, "nome": "Ginger beer" }
   ],
   "cocktails": [
     {
@@ -287,7 +290,7 @@
       "immagine": { "url": "/assets/img/bloody-mary.jpg", "alt": "Bloody Mary in tumbler alto" },
       "ingredienti": [
         { "ingredienteId": 20, "quantita": "45 ml" },
-        { "ingredienteId": 15, "quantita": "90 ml" },
+        { "ingredienteId": 51, "quantita": "90 ml" },
         { "ingredienteId": 18, "quantita": "15 ml" },
         { "ingredienteId": 30, "quantita": "2 dash" }
       ],
@@ -390,7 +393,7 @@
         { "ingredienteId": 1, "quantita": "60 ml" },
         { "ingredienteId": 2, "quantita": "10 ml" }
       ],
-      "istruzioni": "Mescolare o stir con ghiaccio e filtrare in coppa fredda. Guarnire con oliva.",
+      "istruzioni": "Mescolare con ghiaccio e filtrare in coppa fredda. Guarnire con oliva.",
       "bicchiere": "Coppa Martini"
     },
     {
@@ -509,8 +512,8 @@
       "nome": "Dark and Stormy",
       "immagine": { "url": "/assets/img/dark-and-stormy.jpg", "alt": "Dark and Stormy" },
       "ingredienti": [
-        { "ingredienteId": 22, "quantita": "50 ml" },
-        { "ingredienteId": 28, "quantita": "100 ml" }
+        { "ingredienteId": 22, "quantita": "60 ml" },
+        { "ingredienteId": 53, "quantita": "100 ml" }
       ],
       "istruzioni": "Versare rum e ginger beer in highball con ghiaccio. Guarnire con lime.",
       "bicchiere": "Highball"
@@ -621,6 +624,19 @@
         { "ingredienteId": 50, "quantita": "10 ml" }
       ],
       "istruzioni": "Mescolare tutti gli ingredienti con ghiaccio e servire in coppa o highball.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "blue-lagoon",
+      "nome": "Blue Lagoon",
+      "immagine": { "url": "/assets/img/blue-lagoon.jpg", "alt": "blue-lagoon" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "40 ml" },
+        { "ingredienteId": 51, "quantita": "20 ml" },
+        { "ingredienteId": 50, "quantita": "10 ml" },
+        { "ingredienteId": 18, "quantita": "20 ml" }
+      ],
+      "istruzioni": "Versare gli ingredienti in un bicchiere con ghiaccio e mescolare delicatamente. Decorare con una fetta di limone.",
       "bicchiere": "Highball"
     }
   ]

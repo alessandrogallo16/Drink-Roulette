@@ -4,8 +4,22 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: darkslategray;
+    background-color: rgb(22, 33, 33);
+    background-image: url(/assets/images/sfondo-drinkcasuale.png);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.navbar-brand {
+    width: 1%;
+}
+
+.logo {
+    width: 200%;
+    padding-right: 2%;
 }
 
 .card {
@@ -30,10 +44,13 @@ body {
 }
 
 .new-drink-btn {
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     padding: 2%;
     border-radius: 10px; 
     box-shadow: 5px 5px;
+    font-family: "Bitcount Grid Double" , sans-serif;
+    font-size: 20px;
+    color: black;
 
 }
 
@@ -44,4 +61,20 @@ body {
     transform: translate(-50%);
     height: auto;
     appearance: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media (min-width: 1024px) {
+.new-drink-btn {
+    font-size: 25px
+  }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+    width: 3%;
+}
 }
