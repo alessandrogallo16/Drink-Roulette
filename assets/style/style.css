@@ -7,8 +7,8 @@
 
 body {
     background-color: rgb(22, 33, 33);
-    
-    background-image: url(../images/sfondo-drinkcasuale.png);
+
+    background-image: url(./images/sfondo-drinkcasuale.png);
     background-size: cover;
     background-position: center center;
     
