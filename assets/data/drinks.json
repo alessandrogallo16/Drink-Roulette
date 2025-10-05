@@ -52,8 +52,11 @@
     { "id": 50, "nome": "Sciroppo di zucchero" },
     { "id": 51, "nome": "Blue Curaçao" },
     { "id": 52, "nome": "Succo di pomodoro" },
-    { "id": 53, "nome": "Ginger beer" }
+    { "id": 53, "nome": "Ginger beer" },
+    { "id": 54, "nome": "Sweet & Sour" },
+    { "id": 55, "nome": "Sprite" }
   ],
+
   "cocktails": [
     {
       "id": "negroni",
@@ -638,6 +641,21 @@
       ],
       "istruzioni": "Versare gli ingredienti in un bicchiere con ghiaccio e mescolare delicatamente. Decorare con una fetta di limone.",
       "bicchiere": "Highball"
+    },
+       {
+      "id": "miami-ice",
+      "nome": "Miami Ice",
+      "immagine": { "url": "/assets/img/miami-ice.jpg", "alt": "miami ice" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "15 ml" },
+        { "ingredienteId": 21, "quantita": "15 ml" },
+        { "ingredienteId": 1, "quantita": "15 ml" },
+        { "ingredienteId": 51, "quantita": "15 ml" },
+        { "ingredienteId": 54, "quantita": "60 ml" },
+        { "ingredienteId": 55, "quantita": "q.b." }
+      ],
+      "istruzioni": "Come prima cosa serve versare la vodka, il rum, il gin, il blue curacao e lo sweet and sour un uno shaker per metà colmo di ghiaccio. Shakerare per bene e versare in un thumbler alto pieno di ghiaccio e completare con la Sprite. Guarnire con una fettina di limone o lime",
+      "bicchiere": "Tumbler alto"
     }
   ]
 }
