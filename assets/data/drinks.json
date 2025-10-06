@@ -12,7 +12,7 @@
     { "id": 10, "nome": "Lampone" },
     { "id": 11, "nome": "Sciroppo di sambuco" },
     { "id": 12, "nome": "Menta" },
-    { "id": 13, "nome": "Lime" },
+    { "id": 13, "nome": "Succo di lime" },
     { "id": 14, "nome": "Bitter Campari" },
     { "id": 15, "nome": "Succo di arancia" },
     { "id": 16, "nome": "Vino rosato" },
@@ -35,7 +35,7 @@
     { "id": 33, "nome": "Olive" },
     { "id": 34, "nome": "Tonic" },
     { "id": 35, "nome": "Cola" },
-    { "id": 36, "nome": "Liquore al caffè" },
+    { "id": 36, "nome": "Liquore al caffè (Kahlúa)" },
     { "id": 37, "nome": "Caffè espresso" },
     { "id": 38, "nome": "Champagne" },
     { "id": 39, "nome": "Benedictine" },
@@ -54,7 +54,9 @@
     { "id": 52, "nome": "Succo di pomodoro" },
     { "id": 53, "nome": "Ginger beer" },
     { "id": 54, "nome": "Sweet & Sour" },
-    { "id": 55, "nome": "Sprite" }
+    { "id": 55, "nome": "Sprite" },
+    { "id": 56, "nome": "Midori" },
+    { "id": 57, "nome": "Panna liquida" }
   ],
 
   "cocktails": [
@@ -565,8 +567,8 @@
       "immagine": { "url": "/assets/img/white-russian.jpg", "alt": "White Russian" },
       "ingredienti": [
         { "ingredienteId": 20, "quantita": "50 ml" },
-        { "ingredienteId": 36, "quantita": "25 ml" },
-        { "ingredienteId": 31, "quantita": "25 ml" }
+        { "ingredienteId": 36, "quantita": "20 ml" },
+        { "ingredienteId": 57, "quantita": "30 ml" }
       ],
       "istruzioni": "Versare vodka e liquore al caffè in tumbler con ghiaccio, aggiungere panna o latte.",
       "bicchiere": "Tumbler basso"
@@ -587,8 +589,8 @@
       "nome": "Gimlet",
       "immagine": { "url": "/assets/img/gimlet.jpg", "alt": "Gimlet" },
       "ingredienti": [
-        { "ingredienteId": 1,  "quantita": "60 ml" },
-        { "ingredienteId": 13, "quantita": "15 ml" }
+        { "ingredienteId": 1,  "quantita": "50 ml" },
+        { "ingredienteId": 13, "quantita": "25 ml" }
       ],
       "istruzioni": "Shakerare con ghiaccio e filtrare in coppa fredda.",
       "bicchiere": "Coppa cocktail"
@@ -642,7 +644,7 @@
       "istruzioni": "Versare gli ingredienti in un bicchiere con ghiaccio e mescolare delicatamente. Decorare con una fetta di limone.",
       "bicchiere": "Highball"
     },
-       {
+    {
       "id": "miami-ice",
       "nome": "Miami Ice",
       "immagine": { "url": "/assets/img/miami-ice.jpg", "alt": "miami ice" },
@@ -656,6 +658,33 @@
       ],
       "istruzioni": "Come prima cosa serve versare la vodka, il rum, il gin, il blue curacao e lo sweet and sour un uno shaker per metà colmo di ghiaccio. Shakerare per bene e versare in un thumbler alto pieno di ghiaccio e completare con la Sprite. Guarnire con una fettina di limone o lime",
       "bicchiere": "Tumbler alto"
+    },
+    {
+      "id": "japanese-ice-tea",
+      "nome": "Japanese Ice Tea",
+      "immagine": { "url": "/assets/img/japanese-ice-tea.jpg", "alt": "japanese ice tea" },
+      "ingredienti": [
+        { "ingredienteId": 20, "quantita": "15 ml" },
+        { "ingredienteId": 21, "quantita": "15 ml" },
+        { "ingredienteId": 1, "quantita": "15 ml" },
+        { "ingredienteId": 56, "quantita": "15 ml" },
+        { "ingredienteId": 54, "quantita": "60 ml" },
+        { "ingredienteId": 7, "quantita": "q.b." }
+      ],
+      "istruzioni": "Versare gli ingredienti nel bicchiere colmo di ghiaccio e guarnire con la fettina di limone.",
+      "bicchiere": "Highball"
+    },
+    {
+      "id": "angelo-azzurro",
+      "nome": "Angelo Azzurro",
+      "immagine": { "url": "/assets/img/angelo-azzurro.jpg", "alt": "Angelo Azzurro" },
+      "ingredienti": [
+        { "ingredienteId": 1, "quantita": "60 ml" },
+        { "ingredienteId": 24, "quantita": "40 ml" },
+        { "ingredienteId": 51, "quantita": "15 ml" }
+      ],
+      "istruzioni": "Posizionare in congelatore i calici Martini, dopodiché versare gli ingredienti (senza un particolare ordine) in uno shaker con qualche cubetto di ghiaccio ed agitare. Infine, trasferire nelle coppe prelevate dal freezer e guarnire il tutto con scorza di limone o lime.",
+      "bicchiere": "Coppa Martini"
     }
   ]
 }
