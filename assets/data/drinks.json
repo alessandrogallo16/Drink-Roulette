@@ -685,6 +685,52 @@
       ],
       "istruzioni": "Posizionare in congelatore i calici Martini, dopodiché versare gli ingredienti (senza un particolare ordine) in uno shaker con qualche cubetto di ghiaccio ed agitare. Infine, trasferire nelle coppe prelevate dal freezer e guarnire il tutto con scorza di limone o lime.",
       "bicchiere": "Coppa Martini"
-    }
+    },
+
+  {
+    "id": "gin-fizz",
+    "nome": "Gin Fizz",
+    "immagine": {
+      "url": "/assets/img/gin-fizz.jpg",
+      "alt": "Gin Fizz in highball"
+    },
+    "ingredienti": [
+      { "ingredienteId": 1, "quantita": "45 ml" },
+      { "ingredienteId": 13, "quantita": "30 ml" },
+      { "ingredienteId": 50, "quantita": "15 ml" },
+      { "ingredienteId": 7, "quantita": "q.b." }
+    ],
+    "istruzioni": "Versare gin, succo di lime e sciroppo di zucchero in uno shaker con ghiaccio; agitare energicamente, filtrare in un bicchiere highball con ghiaccio fresco e completare con soda.",
+    "bicchiere": "Highball"
+  },
+  {
+    "id": "cuba-libre",
+    "nome": "Cuba Libre",
+    "immagine": {
+      "url": "/assets/img/cuba-libre.jpg",
+      "alt": "Cuba Libre in highball"
+    },
+    "ingredienti": [
+      { "ingredienteId": 21, "quantita": "50 ml" },
+      { "ingredienteId": 13, "quantita": "10 ml" },
+      { "ingredienteId": 35, "quantita": "q.b." }
+    ],
+    "istruzioni": "Riempire un bicchiere highball con ghiaccio, versare rum bianco e succo di lime; aggiungere la cola, mescolare delicatamente e guarnire con una fetta di lime.",
+    "bicchiere": "Highball"
+  },
+  {
+    "id": "screwdriver",
+    "nome": "Screwdriver",
+    "immagine": {
+      "url": "/assets/img/screwdriver.jpg",
+      "alt": "Screwdriver in highball"
+    },
+    "ingredienti": [
+      { "ingredienteId": 20, "quantita": "50 ml" },
+      { "ingredienteId": 15, "quantita": "100 ml" }
+    ],
+    "istruzioni": "Riempire un bicchiere highball con ghiaccio, versare vodka e succo di arancia; mescolare delicatamente e servire.",
+    "bicchiere": "Highball"
+  }
   ]
 }
