@@ -20,7 +20,7 @@
     { "id": 18, "nome": "Succo di limone" },
     { "id": 19, "nome": "Spumante brut" },
     { "id": 20, "nome": "Vodka" },
-    { "id": 21, "nome": "Rum bianco" },
+    { "id": 21, "nome": "Rum chiaro" },
     { "id": 22, "nome": "Rum scuro" },
     { "id": 23, "nome": "Tequila" },
     { "id": 24, "nome": "Triple sec" },
@@ -56,7 +56,8 @@
     { "id": 54, "nome": "Sweet & Sour" },
     { "id": 55, "nome": "Sprite" },
     { "id": 56, "nome": "Midori" },
-    { "id": 57, "nome": "Panna liquida" }
+    { "id": 57, "nome": "Panna liquida" },
+    { "id": 58, "nome": "Foglie di menta" }
   ],
 
   "cocktails": [
@@ -731,6 +732,26 @@
     ],
     "istruzioni": "Riempire un bicchiere highball con ghiaccio, versare vodka e succo di arancia; mescolare delicatamente e servire.",
     "bicchiere": "Highball"
+  },
+  {
+    "id": "old-cuban",
+    "nome": "Old Cuban",
+    "immagine": {
+      "url": "/assets/img/old-cuban.jpg",
+      "alt": "old cuban in coppa"
+    },
+    "ingredienti": [
+      { "ingredienteId": 22, "quantita": "45 ml" },
+      { "ingredienteId": 13, "quantita": "22.5 ml" },
+      { "ingredienteId": 50, "quantita": "30 ml" },
+      { "ingredienteId": 58, "quantita": "6/8" },
+      { "ingredienteId": 30, "quantita": "2 gocce" },
+      { "ingredienteId": 38, "quantita": "60ml" }
+    ],
+    "istruzioni": "Shakerare gli ingredienti (tranne il Prosecco) e filtrare il cocktail in una coppetta. Completare con Champagne (o Prosecco) e guarnire con foglioline di menta..",
+    "bicchiere": "Coppa"
   }
+
+
   ]
 }

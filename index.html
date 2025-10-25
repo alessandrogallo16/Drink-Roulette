@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRINK-ROULETTE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="apple-touch-icon" href="logo-app.png">
@@ -18,11 +17,8 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo-drink.png" alt="logo del sito"
-                    class="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo-drink.png" alt="logo del sito" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,7 +36,6 @@
             </div>
         </div>
     </nav>
-
     <div class="container loading loading-div">
         <div class="row">
             <div class="col">
@@ -49,7 +44,6 @@
             </div>
         </div>
     </div>
-
     <div class="container loading error-div d-none">
         <div class="row">
             <div class="col d-flex justify-content-center">
@@ -57,7 +51,6 @@
             </div>
         </div>
     </div>
-
     <!--     <div class="container">
         <div class="row">
             <div class="col danger-div">
@@ -66,7 +59,6 @@
             </div>
         </div>
     </div> -->
-
     <section class="random-drink d-none">
         <div class="container">
             <div class="row m-5">
@@ -74,7 +66,6 @@
                     <button class="new-drink-btn">NUOVO DRINK CASUALE</button>
                 </div>
             </div>
-
             <div class="row drinks-ctn justify-content-center">
                 <div class="card w-55 my-5">
                     <img src="" class="card-img-top p-3" alt="...">
@@ -83,23 +74,20 @@
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card’s content.</p>
                     </div>
-
                     <div class="row">
                         <div class="col">
                             <h6 class="drink-type text-center text-danger"></h6>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-8">
                             <h6 class="">Ingredienti</h6>
                         </div>
-                        <div class="col-6 text-end">
+                        <div class="col-4 text-end">
                             <h6 class="">Dosaggio</h6>
                         </div>
                     </div>
                     <ul class="list-group list-group-flush">
-
-
                     </ul>
                     <div class="card-body text-center">
                         <button class="btn btn-info"><a target="_blank" href="#" class="card-link">Cercalo su google!</a></button>
@@ -108,25 +96,31 @@
             </div>
     </section>
 
+    <section>
+        <div class="d-flex p-2" role="search">
+            <input class="form-control me-2 search-by-id" type="search" placeholder="Ricerca drink tramite ID" aria-label="Search" />
+            <button class="btn btn-primary search-by-id-btn">Cerca</button>
+        </div>
+    </section>
+
+
     <footer>
         <div class="container-fluid d-flex justify-content-center bg-secondary">
             <div class="row ">
                 <div class="col">
                     <div class="d-flex flex-row gap-5 footer-box">
-                        <h6> <a class="text-decoration-none text-white report-bug "
-                                href="mailto:alessandrogallo16@proton.me"> &gt;&gt;&gt; Segnala un problema &lt;&lt;&lt;
+                        <h6> <a class="text-decoration-none text-white report-bug " href="mailto:alessandrogallo16@proton.me"> &gt;&gt;&gt; Segnala un problema &lt;&lt;&lt;
                             </a></h6>
-                        <h6 class="visit-counter">Visite al sito: <span class="visit-counter-num"><script type="text/javascript" src="https://counter.websiteout.com/js/21/0/1/1"></script></span></h6>          
+                        <h6 class="visit-counter">Visite al sito: <span class="visit-counter-num">
+                                <script type="text/javascript" src="https://counter.websiteout.com/js/21/0/1/1"></script>
+                            </span></h6>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
     <script src="./assets/script/script.js"></script>
 </body>
 
