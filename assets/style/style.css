@@ -79,6 +79,10 @@ footer {
 
 }
 
+.search-by-id-ctn {
+    max-width: 800px;
+    
+}
 
 .danger-icon {
     width: 7%;
