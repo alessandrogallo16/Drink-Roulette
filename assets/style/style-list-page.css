@@ -7,10 +7,11 @@
 
 body {
     background-color: rgb(22, 33, 33);
-
+    width: 100%;
     background-image: url("../images/sfondo-drinkcasuale.png");
     background-size: cover;
     background-position: center center;
+    
 
 }
 
@@ -19,7 +20,7 @@ li {
 }
 
 footer {
-    margin-top: 10%;
+    margin-top: 0vh;
 }
 
 .visit-counter-num { 
@@ -36,63 +37,14 @@ footer {
     padding-right: 2%;
 }
 
-.card {
-    max-width: 600px;
-   
-}
-
-.card-img-top {
-    border-radius: 20px;
-}
-
-.card-text {
-    background-color: rgb(192, 214, 234);
-    border-radius: 5px;
-    text-align: center;
-}
-
-.card-link { 
-    text-decoration: none;
-    color: #000;
-}
-
-.btn-info { 
-    background-color: transparent;
-    box-shadow: 2px 2px;
-}
-
-.loading {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.new-drink-btn {
-    width: 150px;
-    height: 150px;
+.drinklist-div{
     background-color: white;
-    padding: 0;
-    border-radius: 50%;
-    border: 1px solid;
-    box-shadow: 5px 5px;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+.drinklist-div h2 {
     font-family: "Bitcount Grid Double", sans-serif;
-    font-size: 20px;
-    color: black;
-
-}
-
-.search-by-id-ctn {
-    max-width: 800px;
-    
-}
-
-.danger-icon {
-    width: 7%;
-    margin-left: 50%;
-    transform: translate(-50%);
-    height: auto;
-    appearance: none;
 }
 
 .report-bug {
