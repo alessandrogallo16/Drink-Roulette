@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +24,11 @@ footer {
     margin-top: 10%;
 }
 
-.visit-counter-num { 
+.visit-counter {
+    align-self: center;
+}
+
+.visit-counter-num {
     padding-left: 20%;
 }
 
@@ -38,7 +44,7 @@ footer {
 
 .card {
     max-width: 600px;
-   
+
 }
 
 .card-img-top {
@@ -51,12 +57,12 @@ footer {
     text-align: center;
 }
 
-.card-link { 
+.card-link {
     text-decoration: none;
     color: #000;
 }
 
-.btn-info { 
+.btn-info {
     background-color: transparent;
     box-shadow: 2px 2px;
 }
@@ -73,6 +79,7 @@ footer {
     height: 150px;
     background-color: white;
     padding: 0;
+    margin: 40px;
     border-radius: 50%;
     border: 1px solid;
     box-shadow: 5px 5px;
@@ -80,11 +87,20 @@ footer {
     font-size: 20px;
     color: black;
 
+
+    box-shadow: 0 6px gray;
+    transition: all 0.1s ease;
+
+}
+
+.new-drink-btn:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 #2e7d32;
 }
 
 .search-by-id-ctn {
     max-width: 800px;
-    
+
 }
 
 .danger-icon {
@@ -95,10 +111,57 @@ footer {
     appearance: none;
 }
 
-.report-bug {
-    font-family: "Bitcount Grid Double", sans-serif;
-    font-weight: 400;
+.report-problem-btn {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(102, 102, 210);
 }
+
+.report-problem-btn a {
+    color: white;
+    font-family: Bitcount Grid Double, sans-serif;
+}
+
+/* PAGINA DI LOGIN */
+
+
+.form-container {
+    width: 20%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    background-color: rgb(79, 75, 75);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.email-block {
+    text-align: center;
+}
+
+.email-block label,
+.pass-block label {
+    color: white;
+    font-size: 3vh;
+    background-color: rgb(102, 102, 210);
+    padding: 5px 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.email-block input,
+.pass-block input {
+    padding: 10px 10px;
+    margin-bottom: 20px;
+
+
+}
+
+.pass-block {
+    text-align: center;
+}
+
 
 
 @media (min-width: 1024px) {
@@ -106,8 +169,8 @@ footer {
         font-size: 25px
     }
 
-        .visit-counter-num { 
-    padding-left: 3px;
+    .visit-counter-num {
+        padding-left: 3px;
     }
 }
 
@@ -115,10 +178,26 @@ footer {
     .navbar-brand {
         width: 3%;
     }
-    .footer-box {
-        flex-direction: column !important;
-        gap: 0 !important;
+
+
+
+    .visit-counter {
+        align-self: initial;
+    }
+
+
+    /* PAGINA DI LOGIN */
+
+    .form-container {
+        width: 85%;
     }
 
 }
 
+@media (max-width: 425px) {
+
+    .footer-box {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+}
