@@ -44,9 +44,7 @@ function stopLoadingErr() {
     errorDiv.setAttribute("class", "container loading error-div")
 }
 
-function refreshPage() {
-    location.reload()
-}
+
 
 function getRandomItem(array) {
     const index = Math.floor(Math.random() * array.length)
@@ -237,7 +235,11 @@ async function getRandomDrink() {
 getRandomDrink()
 
 
-newDrinkBtn.addEventListener("click", getRandomDrink)
+newDrinkBtn.addEventListener("click", () => {
+    setTimeout(getRandomDrink, "500")
+    
+
+} )
 
 
 searchByIdBtn.addEventListener("click", () => {
