@@ -68,7 +68,7 @@ async function getDrinkById(id) {
         console.log(foundDrink)
 
         
-        cardImg.setAttribute("src", "./" + foundDrink.data.immagine.url);
+        cardImg.setAttribute("src", "." + foundDrink.data.immagine.url);
         cardImg.setAttribute("alt", foundDrink.data.immagine.alt);
 
         
@@ -122,7 +122,7 @@ async function getRandomDrink() {
 
         console.log(drinks)
 
-        cardImg.setAttribute("src", newDrink.immagine.url);
+        cardImg.setAttribute("src", "." + newDrink.immagine.url);
         cardImg.setAttribute("alt", newDrink.immagine.alt);
         cardTitle.innerText = newDrink.nome;
         drinkType.innerText = "Alcolico"; // o usa newDrink.tipo se presente
