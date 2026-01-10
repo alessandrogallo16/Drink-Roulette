@@ -101,7 +101,7 @@ footer {
 .new-drink-btn {
     width: 150px;
     height: 150px;
-    background: url(/assets/images/gettone-casino4.png);
+    background: url(./assets/images/gettone-casino4.png);
     background-size: cover;
     background-position: center;
     padding: 0;
