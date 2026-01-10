@@ -1,41 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
-body {
-    background-color: rgb(22, 33, 33);
-    width: 100%;
-    background-image: url("../images/sfondo-drinkcasuale.png");
-    background-size: cover;
-    background-position: center center;
-    
-
-}
-
-li {
-    list-style-type: none;
-}
-
-footer {
-    margin-top: 0vh;
-}
-
-.visit-counter-num { 
-    padding-left: 20%;
-}
-
-
-.navbar-brand {
-    width: 1%;
-}
-
-.logo {
-    width: 200%;
-    padding-right: 2%;
-}
 
 .drinklist-div{
     background-color: white;
@@ -47,30 +11,5 @@ footer {
     font-family: "Bitcount Grid Double", sans-serif;
 }
 
-.report-bug {
-    font-family: "Bitcount Grid Double", sans-serif;
-    font-weight: 400;
-}
 
-
-@media (min-width: 1024px) {
-    .new-drink-btn {
-        font-size: 25px
-    }
-
-        .visit-counter-num { 
-    padding-left: 3px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar-brand {
-        width: 3%;
-    }
-    .footer-box {
-        flex-direction: column !important;
-        gap: 0 !important;
-    }
-
-}
 

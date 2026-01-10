@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Luckiest+Guy&display=swap');
+
+@import url("style-list-page.css");
 
 * {
     margin: 0;
@@ -8,9 +10,8 @@
 
 
 body {
-    background-color: rgb(22, 33, 33);
+    background: linear-gradient(180deg, #2c3e50, #5b2c82);
 
-    background-image: url("../images/sfondo-drinkcasuale.png");
     background-size: cover;
     background-position: center center;
 
@@ -22,6 +23,7 @@ li {
 
 footer {
     margin-top: 10%;
+    
 }
 
 .visit-counter {
@@ -32,6 +34,14 @@ footer {
     padding-left: 20%;
 }
 
+.navbar {
+    background-color: #6a7b8c;
+}
+
+.navbar-nav {
+    align-items: center !important;
+    justify-content: center;
+}
 
 .navbar-brand {
     width: 1%;
@@ -44,7 +54,16 @@ footer {
 
 .card {
     max-width: 600px;
+ 
+    background-color: rgba(40, 42, 54, 0.95); 
+    color: #FFFFFF;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 
+
+}
+
+.card-title {
+    color: #E0E0FF;
 }
 
 .card-img-top {
@@ -53,18 +72,23 @@ footer {
 
 .card-text {
     background-color: rgb(192, 214, 234);
+    color: #2C2F4A;
     border-radius: 5px;
     text-align: center;
 }
 
 .card-link {
     text-decoration: none;
-    color: #000;
+    color: #FFFFFF;
+    font-family: "Luckiest Guy" , sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 .btn-info {
-    background-color: transparent;
+    background-color:  rgb(102, 102, 210);;
     box-shadow: 2px 2px;
+    border: none;
 }
 
 .loading {
@@ -77,19 +101,25 @@ footer {
 .new-drink-btn {
     width: 150px;
     height: 150px;
-    background-color: white;
+    background: url(/assets/images/gettone-casino4.png);
+    background-size: cover;
+    background-position: center;
     padding: 0;
     margin: 40px;
     border-radius: 50%;
-    border: 1px solid;
-    box-shadow: 5px 5px;
-    font-family: "Bitcount Grid Double", sans-serif;
-    font-size: 20px;
-    color: black;
+    border: none;
+    font-family: "Luckiest Guy", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* x-offset, y-offset, blur, colore */
+    letter-spacing: 2px; 
+    border-radius: 50%; 
+    background-color: transparent; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4); 
+    transition: all 0.2s ease; 
 
 
-    box-shadow: 0 6px gray;
-    transition: all 0.1s ease;
+    
+
 
 }
 
@@ -98,10 +128,22 @@ footer {
     box-shadow: 0 0 #2e7d32;
 }
 
-.search-by-id-ctn {
+.search-by-id-btn {
     max-width: 800px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #6666d2;
+    color: #FFFFFF;
+    font-family: "Luckiest Guy", sans-serif;
+    letter-spacing: 1px;
 
 }
+
+.new-drink-btn.pressed {
+    transform: translateY(3px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
 
 .danger-icon {
     width: 7%;
@@ -166,7 +208,7 @@ footer {
 
 @media (min-width: 1024px) {
     .new-drink-btn {
-        font-size: 25px
+        font-size: 100%
     }
 
     .visit-counter-num {
@@ -179,10 +221,17 @@ footer {
         width: 3%;
     }
 
-
+    footer {
+        margin-top: 20vh;
+    }
 
     .visit-counter {
         align-self: initial;
+        
+    }
+    
+    .visit-counter-num {
+        padding-left: 5%;
     }
 
 
@@ -196,8 +245,15 @@ footer {
 
 @media (max-width: 425px) {
 
+    .drinks-ctn{
+        margin: 10px 0px !important;
+    }
+
     .footer-box {
         flex-direction: column !important;
         gap: 0 !important;
+        width: 300px;
     }
+
+
 }

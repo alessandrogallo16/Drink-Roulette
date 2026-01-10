@@ -169,3 +169,11 @@ searchByIdBtn.addEventListener("click", () => {
     getDrinkById(searchText)
 
 })
+
+newDrinkBtn.addEventListener('touchstart', () => {
+    newDrinkBtn.classList.add('pressed');
+});
+
+newDrinkBtn.addEventListener('touchend', () => {
+    newDrinkBtn.classList.remove('pressed');
+});
