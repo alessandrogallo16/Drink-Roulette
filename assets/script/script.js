@@ -1,6 +1,7 @@
 // ############# INIZIO DICHIARAZIONI VARIABILI #############
 
-const DATABASE_ADDRESS = "./assets/data/drinks.json"
+//const DATABASE_ADDRESS = "./assets/data/drinks.json"
+const DATABASE_ADDRESS = "https://drink-roulette-backend.onrender.com/api/drinks/"  
 const GOOGLE_SEARCH = "https://www.google.com/search?q="
 
 
@@ -52,123 +53,58 @@ function getRandomItem(array) {
 }
 
 
-function getDrinkById(id) {
-
-    listIng.innerHTML = ""
+async function getDrinkById(id) {
     
-    let foundDrink
-    let index = 0
+    listIng.innerHTML = "";
 
     try {
+        
+        const res = await fetch(`${DATABASE_ADDRESS}${id}`);
+        if (!res.ok) {
+            throw new Error("Drink non trovato");
+        }
 
-        fetch(DATABASE_ADDRESS)
+        const foundDrink = await res.json();
+        console.log(foundDrink)
 
+        
+        cardImg.setAttribute("src", "." + foundDrink.data.immagine.url);
+        cardImg.setAttribute("alt", foundDrink.data.immagine.alt);
 
-            .then(result => {
-                
-                return result.json()
-            })
+        
+        cardTitle.innerText = foundDrink.data.nome;
+        drinkType.innerText = "Alcolico"; 
+        cardText.innerText = foundDrink.data.istruzioni;
 
+        
+        fillCardIng(foundDrink.data.ingredienti);
+        
 
-            .then(data => {
-                console.log(data.ingredienti)
-                console.log(data.cocktails)
+        
+        cardLink.setAttribute("href", GOOGLE_SEARCH + foundDrink.data.nome + " cocktail");
 
-
-                const drinks = data.cocktails
-
-                for (drink of drinks) {
-
-                    index = index + 1
-                    console.log(index)
-
-                    if (drink.id === id) {
-
-                        foundDrink = drink
-                        console.log(foundDrink)
-                        cardImg.setAttribute("src", "." + foundDrink.immagine.url)
-                        cardImg.setAttribute("alt", foundDrink.immagine.alt)
-
-                        cardTitle.innerText = foundDrink.nome
-                        drinkType.innerText = "Alcolico"
-                        cardText.innerText = foundDrink.istruzioni
-                        fillCardIng(foundDrink.ingredienti)
-                        convertIdText()
-
-                        cardLink.setAttribute("href", GOOGLE_SEARCH + foundDrink.nome + " cocktail")
-                        stopLoading()
-                        break
-                    } else if (index === drinks.length) {
-
-                        window.alert("Drink non trovato")
-
-                        throw new Error
-                        
-
-                    } else {
-                        console.log("Drink non ancora trovato")
-                    }
-
-
-                }
-
-            })
-            .catch(error => {
-                console.log(error)
-                
-            })
-
-    } catch (e) {
-        console.log(e)
+        stopLoading();
+    } catch (error) {
+        console.error(error);
+        window.alert(error.message || "Errore nel recupero del drink");
     }
-
-}
-
-/* la funzione "convertIdText" serve per convertire l'id del dell'ingrediente del drink attuale, nel nome stesso dell' ingrediente;
-    per poi aggiungere la ricerca automatica su google se viene cliccato il nome*/
-
-function convertIdText() {
-
-    fetch(DATABASE_ADDRESS)
-        .then(result => {
-            return result.json()
-        })
-        .then(data => {
-            const ingToConvert = document.querySelectorAll(".ingredient-class")
-            for (ing of ingToConvert) {
-                for (i of data.ingredienti) {
-                    if (i.id == ing.innerText) {
-                        console.log("trovato id che corrisponde a ingrediente del drink attuale")
-                        ing.innerText = i.nome
-                    }
-                }
-            }
-
-
-            const ingToSearch = document.querySelectorAll(".ingredient-class")
-            for (singleIng in ingToSearch) {
-
-                const actualIng = ingToSearch[singleIng]
-                const ingUrl = GOOGLE_SEARCH + actualIng.innerText
-                console.log(ingUrl)
-
-                function Search() {
-                    return window.open(ingUrl, '_blank')
-                }
-                actualIng.style.cursor = 'pointer'
-                actualIng.addEventListener('click', Search)
-            }
-        })
-        .catch(errore => console.log(errore))
 }
 
 
 
 function fillCardIng(arrIng) {
-    for (ing of arrIng) {
-        const newIng = document.createElement("li")
-        newIng.innerHTML = `<div class="row"> <div class="col-8 ingredient-class">${ing.ingredienteId}</div> <div class="col-4 text-end">${ing.quantita}</div></div>`
-        listIng.append(newIng)
+    listIng.innerHTML = "";
+    for (ing in arrIng) {
+        const newIng = document.createElement("li");
+        let name = arrIng[ing].ingrediente.nome
+        let quantity = arrIng[ing].quantita
+        
+
+        newIng.innerHTML = `<div class="row">
+                                <div class="col-8 ingredient-class">${name}</div>
+                                <div class="col-4 text-end">${quantity}</div>
+                            </div>`;
+        listIng.append(newIng);
     }
 }
 
@@ -176,55 +112,38 @@ function fillCardIng(arrIng) {
 
 
 async function getRandomDrink() {
-
-    listIng.innerHTML = ""
-
     try {
+        loading();
+        const res = await fetch(DATABASE_ADDRESS);
+        const data = await res.json();
 
-        fetch(DATABASE_ADDRESS)
-            .then(result => {
-                loading()
-                return result.json()
-            })
-            .then(data => {
-                console.log(data.ingredienti)
-                console.log(data.cocktails)
+        const drinks = data.data; // backend restituisce { success: true, data: [...] }
+        const newDrink = getRandomItem(drinks);
 
+        console.log(drinks)
 
-                const newDrink = getRandomItem(data.cocktails)
-                console.log(newDrink)
+        cardImg.setAttribute("src", newDrink.immagine.url);
+        cardImg.setAttribute("alt", newDrink.immagine.alt);
+        cardTitle.innerText = newDrink.nome;
+        drinkType.innerText = "Alcolico"; // o usa newDrink.tipo se presente
+        cardText.innerText = newDrink.istruzioni;
 
-                cardImg.setAttribute("src", "." + newDrink.immagine.url)
-                cardImg.setAttribute("alt", newDrink.immagine.alt)
+        fillCardIng(newDrink.ingredienti);
+        console.log(newDrink.ingredienti)
+        
 
-                cardTitle.innerText = newDrink.nome
-                drinkType.innerText = "Alcolico"
-                cardText.innerText = newDrink.istruzioni
-                fillCardIng(newDrink.ingredienti)
-                convertIdText()
+    
 
 
 
-
-
-
-
-
-                cardLink.setAttribute("href", GOOGLE_SEARCH + newDrink.nome + " cocktail")
-                stopLoading()
-
-            })
-            .catch(error => {
-                console.log(error)
-                stopLoadingErr()
-            })
-
-    } catch (e) {
-        console.log(e)
+        cardLink.setAttribute("href", GOOGLE_SEARCH + newDrink.nome + " cocktail");
+        stopLoading();
+    } catch (error) {
+        console.log(error);
+        stopLoadingErr();
     }
-
-
 }
+
 
 
 // ############# FINE FUNZIONI #############
