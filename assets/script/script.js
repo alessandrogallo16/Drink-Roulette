@@ -68,7 +68,7 @@ async function getDrinkById(id) {
         console.log(foundDrink)
 
         
-        cardImg.setAttribute("src", "." + foundDrink.data.immagine.url);
+        cardImg.setAttribute("src", "./" + foundDrink.data.immagine.url);
         cardImg.setAttribute("alt", foundDrink.data.immagine.alt);
 
         
